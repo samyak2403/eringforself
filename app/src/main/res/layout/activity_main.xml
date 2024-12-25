@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starryskytown"
+    tools:context=".MainActivity">
+
+    <!-- Account ID Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acount"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+
+        android:layout_margin="16dp"
+        android:background="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/acount"
+        app:layout_constraintStart_toStartOf="@+id/acount"
+        app:layout_constraintTop_toBottomOf="@+id/acount" />
+
+    <!-- Show Interstitial Ads Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showInterstitialAdsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_background"
+        android:lineBreakWordStyle="phrase"
+        android:text="Open For INFO"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usertextview" />
+
+    <!-- Show Rewarded Ads Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showRewardedAdsBtn"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/qs"
+        android:gravity="center"
+        android:lineBreakWordStyle="phrase"
+        android:padding="10dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showInterstitialAdsBtn" />
+
+    <!-- Rewarded Coin Text -->
+    <TextView
+        android:id="@+id/rewardedCoinTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rewarded Amount"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/adBannerCon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showRewardedAdsBtn" />
+
+    <!-- Banner Ad Container -->
+    <RelativeLayout
+        android:id="@+id/adBannerCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Information Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/adss"
+
+        android:gravity="center"
+        android:text="Ad Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showRewardedAdsBtn" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_background"
+
+        android:gravity="center"
+        android:text="Update App"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

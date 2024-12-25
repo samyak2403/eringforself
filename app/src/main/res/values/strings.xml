@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ering  for self</string>
+    <string name="enter_valid_game_id">Please enter a valid Game ID.</string>
+    <string name="switch_mode_saved">Switch to %1$s mode saved. Activate Unity Ads to apply.</string>
+    <string name="unity_ads_initialized">Unity Ads initialized in %1$s mode.</string>
+    <string name="initialization_failed">Initialization failed: %1$s</string>
+    <string name="reinitializing_mode">Switching to %1$s mode. Reinitializing Unity Ads...</string>
+    <string name="unity_ads_deactivated">Unity Ads deactivated successfully.</string>
+    <string name="status_active">Your status is active</string>
+    <string name="status_inactive">Your status is inactive</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="activate">Activate</string>
+    <string name="mode_saved">Mode updated to %1$s successfully!</string>
+
+    <string name="no_changes_to_game_id">No changes to Game ID</string>
+    <string name="update">Update</string>
+
+</resources>
